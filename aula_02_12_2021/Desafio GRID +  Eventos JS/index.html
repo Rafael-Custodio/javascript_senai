@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 02/12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Tudo Sobre IMC</h1>
+    </div>
+    <div class="grid">
+        <div class="texto">
+            <div class="t2">
+                <p id="demo">
+                    Índice de Massa Corporal. ... Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa Corporal, conhecido pela sigla IMC, é um cálculo simples que permite medir se alguém está ou não com o peso ideal. Ele aponta se o peso está adequado
+                    ou se está abaixo ou acima do peso.
+                </p>
+            </div>
+            <p>
+                <button type="button" onclick="paragrafo1()">Como o IMC é calculado?</button>
+            </p>
+            <p>
+                <button type="button" onclick="paragrafo2()">Importância do IMC</button>
+            </p>
+            <p>
+                <button type="button" onclick="paragrafo3()">O IMC é a melhor forma de avaliar seu peso?</button>
+            </p>
+            <p>
+                <button type="button" onclick="paragrafo4()">O que fazer para melhorar seu IMC?</button>
+            </p>
+            <script>
+                function paragrafo1() {
+                    document.getElementById("demo").style.color = "#4682b4"
+
+                    document.getElementById("demo").innerHTML = "O peso deve estar em kg e a altura em metros, e o resultado é dado em kg/m2. Depois de obter o resultado, é possível verificar em que faixa o IMC se encontra, podendo indica"
+                }
+
+                function paragrafo2() {
+                    document.getElementById("demo").style.color = "#B22222"
+                    document.getElementById("demo").innerHTML = "Saber o IMC é importante para verificar se o peso está de acordo com a altura da pessoa, além de ser importante para saber se existe risco de desenvolver alguma doença. No caso das crianças, o IMC é importante para saber se o desenvolvimento está de acordo com o esperado"
+                }
+
+                function paragrafo3() {
+                    document.getElementById("demo").style.color = "red"
+                    document.getElementById("demo").innerHTML = "Apesar do IMC ser considerado fundamental para saber o estado nutricional da pessoa, é uma ferramenta que não leva em consideração muitos outros fatores que são importantes para avaliar o peso de uma pessoa.Assim, embora seja uma boa ferramenta rápida para perceber se o peso está ou não adequado, não é a melhor forma de avaliar o peso. Para isso, o ideal é consultar um médico ou nutricionista para avaliar outros fatores como a idade, nível de atividade física, composição corporal, nível de hidratação e histórico de saúde, por exemplo"
+
+                }
+
+                function paragrafo4() {
+                    document.getElementById("demo").style.color = "blue"
+                    document.getElementById("demo").innerHTML = " Para melhorar o IMC, é importante verificar se está acima ou abaixo do peso considerado normal.Quando o IMC está na faixa de magreza, é importante consultar um nutricionista que fará uma avaliação completa, indicando um plano alimentar personalizado que priorize o ganho de peso de forma saudável.Por outro lado, quando o IMC está na faixa do sobrepeso ou da obesidade, o nutricionista pode recomendar uma alimentação com redução de calorias. Além da dieta, normalmente também se recomenda a prática de atividade física regular, que ajudará a acelerar o metabolismo e facilitar a perda de peso, o que influencia diretamente no IMC"
+
+
+                }
+            </script>
+        </div>
+        <div class="imc">
+
+            <script src="script.js"></script>
+            <div class="timc">
+                <h1>Calculadora de IMC</h1>
+            </div>
+            <div>
+                <p>
+                    Digite o seu nome:
+                    <input type="text" id="idNome">
+                </p>
+            </div>
+            <div>
+                <p>
+                    Digite o seu peso:
+                    <input type="text" id="idPeso">
+                </p>
+            </div>
+            <div>
+                <p>
+                    Digite a sua altura:
+                    <input type="text" id="idAltura">
+                </p>
+            </div>
+            <!--crio o id para que eu possa chama-lo no .js-->
+            <div>
+                <p>
+                    <button type="button" onclick="calcularIMC()">Calcular</button>
+                </p>
+                <h2 id="saida"></h2>
+            </div>
+
+
+        </div>
+        <div class="fundo2">
+            <img src="../exer02/fotos/fundo2.jpeg" alt="fundo2">
+
+        </div>
+        <div class="foto">
+            <img src="../exer02/fotos/foto.jpeg" alt="foto">
+        </div>
+        <div class="formulario">
+
+            <div class="para_form">
+                <h2 class="form3">Semana da Reeducação alimentar</h2>
+                <p class="p1">É o ato de modificar hábitos alimentares e comportamentos com relação à alimentação. Ela visa solucionar doenças, emagrecer ou a manutenção da saúde. Fazer uma reeducação alimentar serve para compreender melhor o efeito da alimentação
+                    em nossa vida diária.</p>
+            </div>
+
+            <div class="form">
+                <div class="titulo_form">
+                    <h1>Perfil de Participante</h1>
+                </div>
+
+                <form class="form2">
+                    <label>Nome</label>
+                    <!--Etiqueta ao lado da caixa-->
+                    <input type="text" name="nome" placeholder="Digite seu nome" size="40" maxlength="150">
+                    <!--Atributo <placeholder> mostra dentro da caixa o que está escrito-->
+                    <!--Atributo <size> é o tamanho do campo-->
+                    <!--Atributo <maxlength> é o limite de caracteres que cabem dentro do campo <size>-->
+                    <br><br>
+
+                    <label>Com qual gênero você se identifica</label>
+                    <select name="tp_endereco" id="tp_endereco">
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="HT">Homem Trans</option>
+                    <option value="MT">Mulher Trans</option>
+                    <option value="TR">Travesti</option>
+                    <option value="NB">Não-Binário</option>
+                </select>
+                    <br><br>
+
+                    <label>Endereço</label>
+                    <input type="text" name="endereco" placeholder="Digite seu endereço" size="40" maxlength="150">
+                    <br><br>
+
+                    <label>Telefone</label>
+                    <input type="tel" name="telefone" placeholder="Digite seu telefone" size="20" maxlength="150">
+                    <br><br>
+
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu E-mail" size="40" maxlength="150">
+                    <br><br>
+
+                    <label>Previsão de início</label>
+                    <input type="date" name="data_atual">
+                    <br><br>
+
+                    <!--radio faz a bolinha de seleção-->
+                    <label>Você mora em</label>
+                    <input type="radio" id="alternativa1" name="alternativa" value="A"><label for="alternativa1">Casa</label>
+                    <input type="radio" id="alternativa2" name="alternativa" value="B"><label for="alternativa2">Prédio</label>
+                    <br><br>
+
+                    <!--checkbox faz a caixinha de multipla seleção-->
+                    <label>No seu dia a dia, você costuma comer</label>
+                    <br>
+                    <input type="checkbox" id="alternativa1" name="alternativa" value="A"><label for="alternativa1">Muito
+                    Carboidrato</label>
+                    <input type="checkbox" id="alternativa2" name="alternativa" value="B"><label for="alternativa2">Pouco
+                    Carboidrato</label>
+                    <br>
+                    <input type="checkbox" id="alternativa3" name="alternativa" value="C"><label for="alternativa3">Muita
+                    Proteína</label>
+                    <input type="checkbox" id="alternativa4" name="alternativa" value="D"><label for="alternativa4">Pouca
+                    Proteína</label>
+                    <br>
+                    <input type="checkbox" id="alternativa5" name="alternativa" value="E"><label for="alternativa5">Muito
+                    Doce</label>
+                    <input type="checkbox" id="alternativa6" name="alternativa" value="F"><label for="alternativa6">Pouco
+                    Doce</label>
+                    <br>
+                    <input type="checkbox" id="alternativa7" name="alternativa" value="G"><label for="alternativa7">Muita
+                    Fritura</label>
+                    <input type="checkbox" id="alternativa8" name="alternativa" value="H"><label for="alternativa8">Pouca
+                    Fritura</label>
+                    <br>
+                    <input type="checkbox" id="alternativa9" name="alternativa" value="I"><label for="alternativa9">Muita
+                    Verdura</label>
+                    <input type="checkbox" id="alternativa10" name="alternativa" value="J"><label for="alternativa10">Muita
+                    Verdura</label>
+                    <br>
+                    <input type="checkbox" id="alternativa11" name="alternativa" value="K"><label for="alternativa11">Muito
+                    Legume
+                </label>
+                    <input type="checkbox" id="alternativa12" name="alternativa" value="L"><label for="alternativa12">Pouco
+                    Legume</label>
+                    <br><br>
+
+                    <!--<cols> é a largura e <rows> é a altura-->
+                    <label>Observações</label>
+                    <br>
+                    <textarea name="texto" id="texto" placeholder="Digite sua dúvida, crítica, elogio ou sugestão" cols="60" rows="10"></textarea>
+                    <br><br>
+
+                    <!--montar botão padrão-->
+                    <input type="submit" name="enviar" value="Salvar" onclick="alert('Parabéns!!! \n\nVocê deu um passo muito importante para uma mudança de hábitos alimentares, mais saudáveis, que mudarão sua vida. \n\nHoje, é o primeiro dia do resto da sua vida saudável!')">
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>

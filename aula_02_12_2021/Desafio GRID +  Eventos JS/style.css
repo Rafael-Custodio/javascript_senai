@@ -1,0 +1,88 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* fraciona a pagina em 2, caso tivessemos mais um "1fr" dividiriamos em 3 colunas*/
+    gap: 20px;
+    padding: 10px;
+}
+
+.imc {
+    grid-column: 2/3;
+    grid-row: 1/6;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.texto {
+    grid-row: 1/6;
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.botao {
+    padding: 10px;
+}
+
+body {
+    background-image: url("imagem.jpg");
+}
+
+.titulo {
+    background-color: rgb(54, 80, 105);
+    border-radius: 15px;
+    color: white;
+    opacity: 0.9;
+}
+
+.timc,
+.t2,
+.titulo_form,
+.form3 {
+    background-color: rgb(54, 80, 105);
+    border-radius: 10px;
+    color: white;
+    opacity: 0.9;
+    padding: 10px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    border-radius: 15px;
+    grid-row: 7/8;
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    margin: 15px;
+}
+
+.foto {
+    grid-column: 2/3;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.fundo2 {
+    grid-column: 1/4;
+    text-align: center;
+    padding: 15px;
+}
+
+.form2,
+.form3 {
+    padding: 15px;
+}
+
+.p1 {
+    display: grid;
+    grid-auto-rows: 5px;
+}
