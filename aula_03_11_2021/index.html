@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulando o Estilo do Site pela DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div id="manipula">
+        <!--a div é uma tag que serve como conteiner, para armazenar outras tags-->
+        <p>Com base nos argumentos apresentados na aula, é impossível entender que uma coisa é uma coisa, e outra coisa
+            é outra coisa. Admito que não concordo e nem discordo, muito pelo contrário.</p>
+
+        <p>É factível que a Terra é um dos planetas mais conhecidos do mundo, mesmo sabendo que a vida é uma sucessão de
+            sucessivos que sucedem sucessivamente sem cessar.
+            Agora, mais do que nunca, é hora, afinal, o importante é o que importa, pois onde você quer que esteja, você
+            sempre estará lá.</p>
+    </div>
+    <br>
+    <hr>
+
+    <h2>Altere o texto acima clicando nos botões</h2>
+    <div>
+
+        <!-- Botão 01 - Atualizar a página para desfazer as mudanças da DOM-->
+        <input type="button" value="Atualizar a Página" onclick="window.location.reload()">
+
+        <!--Botão 2 - Tamanho da fonte - Modifica o tamanho da fonte para o tamanho específico do script-->
+        <input type="button" value="Tamanho da Fonte" onclick="mudaTamanhoFonte()">
+
+        <!--Botão 03 - Cor da Fonte - Modifica a cor da fonte para a cor especificada no JavaScript-->
+        <input type="button" value="Altera Cor da Fonte" onclick="mudaCorFonte()">
+
+        <!--Botão 04 - Background da Div - Modificar a cor do Background da Div para uma cor específica-->
+        <input type="button" value="Background" onclick="mudaBackground()">
+
+        <!--Botão 05 - Itálico - Modifica a fonte dos parágrafos para Itálico-->
+        <input type="button" value="Itálico" onclick="mudaItalico()">
+
+        <!--Botão 06 - Negrito - Modifica a fonte dos parágrafos para Negrito-->
+        <input type="button" value="Negrito" onclick="mudaNegrito()">
+
+        <!--Botão 07 - Borda - Incluir borda na Div-->
+        <input type="button" value="Borda" onclick="mudaBorda()">
+
+
+        <input type="button" value="Botão 08">
+        <input type="button" value="Botão 09">
+        <input type="button" value="Botão 10">
+        <input type="button" value="Botão 11">
+        <input type="button" value="Botão 12">
+        <input type="button" value="Botão 13">
+        <input type="button" value="Botão 14">
+        <input type="button" value="Botão 15">
+        <input type="button" value="Botão 16">
+        <input type="button" value="Botão 17">
+        <input type="button" value="Botão 18">
+    </div>
+
+    <img src="../aula_03_11_2021/imagens/xuxa.jpg" alt="Foto">
+
+
+</body>
+
+</html>
