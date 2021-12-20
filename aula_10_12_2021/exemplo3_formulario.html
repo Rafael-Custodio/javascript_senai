@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validação de formuláro</title>
+</head>
+
+<body>
+
+    <form name="form1">
+        <label>Nome:</label>
+        <br>
+        <input name="nome" type="text" placeholder="Digite seu nome">
+        <br><br>
+
+        <label>Email:</label>
+        <br>
+        <input name="email" type="text" placeholder="Digite seu e-mail">
+        <br><br>
+
+        <label>Senha:</label>
+        <br>
+        <input name="senha" type="password" placeholder="Digite sua senha">
+        <br><br>
+
+        <label>Repetir Senha:</label>
+        <br>
+        <input name="rep_senha" type="password" placeholder="Repita sua senha">
+        <br><br>
+
+        <button type="submit" onclick="validar()">Enviar</button>
+    </form>
+
+    <script>
+
+        function validar() {
+            let nome = form1.nome.value;
+            let email = form1.email.value;
+            let senha = form1.senha.value;
+            let rep_senha = form1.rep_senha.value;
+
+            if(nome == ""){
+                alert("Preencha o nome corretamente, seu animal!!!");
+                form1.nome.focus();//coloca em foco a parte que contém erro
+            }
+            if(nome.length <= 3){//conta quantos caracteres tem na variável nome, caso seja menor do que 3, manda um alerta
+                alert("Digite seu nome completo!!!");              
+            }
+
+            if(email == ""){
+                alert("Sem e-mail, como eu te acho, seu imbecil!!!");
+                form1.email.focus();
+            }
+            
+            if(senha == ""){
+                alert("Cadê a senha anta ?")
+            form1.senha.focus();
+            }
+
+            if(senha != rep_senha){//compara se as senhas são iguais
+                alert("As senhas não conferem");
+                form1.rep_senha.focus();
+            }
+            else{
+                alert("Ok, senhas iguais!");
+            }
+
+         
+            
+
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

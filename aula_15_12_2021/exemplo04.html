@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox - Exemplo 04</title>
+    <style>
+        .container {
+            display: flex;
+            /*criação do container*/
+            /*            flex-wrap: wrap;/*faz quebrar a linha, cair para a linha de baixo*/
+            /*            flex-direction: row;/*direção por linha*/
+            flex-flow: row wrap;
+            /*faz a mesma função do flex-direction e flex-wrap, porém, agruypado, em uma linha só*/
+            background-color: #DDDDDD;
+            /*fundo cinza*/
+            margin: 10px;
+            /*distância das laterais da página*/
+        }
+
+        .container div {
+            width: 200px;
+            background-color: #FF0000;
+            margin: 10px;
+            /*distância das laterais*/
+            padding: 10px;
+            /*altura*/
+            font-size: 18px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+
+
+    </div>
+
+</body>
+
+</html>

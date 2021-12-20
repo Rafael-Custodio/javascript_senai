@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vetor!!!</title>
+</head>
+<body>
+
+
+    <script>
+        //[] colchetes
+        //vetor é uma variável que pode armazenar várias coisas dentro dela
+        let frutas = [];//criando o vetor
+        frutas[0] = "banana";//inserindo valor na posição 0
+        frutas[1] = "maçã";//inserindo valor na posição 1
+        frutas[2] = "morango";//inserindo valor na posição 2
+        console.log(frutas[1]);//imprime a posição 1
+        
+        frutas.push("mamão");//colocando item aleatório na lista (sem declarar a posição do vetor)
+        frutas.push("abacate");//colocando item aleatório na lista (sem declarar a posição do vetor)
+        frutas.push("melancia");//colocando item aleatório na lista (sem declarar a posição do vetor)
+        
+        frutas.pop();//remove o último da lista
+        frutas.pop();
+
+        frutas.shift();//remove o primeiro da lista
+        frutas.unshift("kiwi");//adicionar no começo da lista
+
+        console.log(frutas);//imprime todo o vetor
+        console.log(frutas.length);//imprime quantas posições tem no vetor
+
+
+
+
+
+
+
+
+/*
+//imprime apenas até a posição 4
+let i;
+for(i = 0; i <= 4; i++){
+    console.log(frutas[i]);
+}        
+*/
+
+/*
+//ele conta quantas posições tem no vetor, principalmente se forem adicionados valores futuros e depois imprime tudo
+let i;
+for(i = 0; i < frutas.length; i++){
+    console.log(frutas[i]);
+}   
+*/
+
+let cont = 0;//criação da variável com o contador, iniciando com o valor de 0
+while (cont < frutas.length) {//enquanto a condição for menor que o número contado pelo length
+    console.log(frutas[cont]);//imprime no console o valor do contador
+    cont++;//incremento, soma 1 a mais na variável contador
+}
+
+</script>
+
+
+
+
+    
+</body>
+</html>

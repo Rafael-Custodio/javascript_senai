@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox - Exemplo 02</title>
+    <style>
+        .container, .container2{
+            background-color: #DDDDDD;/*fundo cinza*/
+            display: flex;/*criação do container*/
+            flex-direction: row;
+            margin: 10px;/*distância das laterais da página*/
+        }
+
+        .container div{
+            background-color: #FF0000;
+            margin: 10px;/*distância das laterais*/
+            padding: 10px;/*altura*/
+            font-size: 18px;
+            color: whitesmoke;   
+        }
+
+        .container2{
+            background-color: #FF0000;
+            margin: 10px;/*distância das laterais*/
+            padding: 10px;/*altura*/
+            font-size: 18px;
+            color: whitesmoke;
+            flex-direction: row-reverse;   
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div><img src="../aula_15_12_2021/gamabunta.jpg" alt="foto gamabunta"></div>
+        <div><p>Gamabunta é um sapo do Monte Myōboku. Não gosta de receber ordens ou de ser controlado. Jiraiya, Minato e Naruto conseguiram ganhar o respeito dele, consequentemente, tornaram-se seu invocador. Também conhecido como Bunta, ele é o sapo chefe do Monte Myōboku.</p></div>
+    </div>
+
+
+    <div class="container2">
+        <div><img src="../aula_15_12_2021/naruto.jpg" alt="foto naruto brabo"></div>
+        <div><p>Naruto Brabo chegando em Konoha!!!<br>Naruto está treinando o Modo Sennin com Fukasaku no Monte Myoboku, Enquanto Pain invade a Vila da Folha e ataca a todos. Os Seis Caminhos de Pain e Konan se separam para procurar pelo Naruto Uzumaki. Mas Naruto chega logo após da destruição da Vila, e enfrenta Pain usando o Modo Sennin e o Chakra da Nove Caudas. Pain se surpreende com a força de Naruto e até o subestima, Mas Naruto está mais motivado ainda a derrotar Pain para assim conseguir vingar o seu mestre Jiraiya.</p></div>
+    </div>
+
+
+
+
+ </body>
+</html>

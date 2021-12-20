@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox - Exemplo 02</title>
+    <style>
+        .container{
+            background-color: #DDDDDD;/*fundo cinza*/
+            display: flex;/*criação do container*/
+            flex-direction: row;
+            margin: 10px;/*distância das laterais da página*/
+        }
+
+        .container2{
+            background-color: #DDDDDD;/*fundo cinza*/
+            display: flex;/*criação do container*/
+            flex-direction: column;
+            margin: 10px;/*distância das laterais da página*/
+        }
+
+        .container div, .container2 div{
+            background-color: #FF0000;
+            margin: 10px;/*distância das laterais*/
+            padding: 10px;/*altura*/
+            font-size: 18px;
+            color: whitesmoke;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

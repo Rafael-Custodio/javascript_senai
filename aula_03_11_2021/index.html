@@ -12,18 +12,22 @@
 <body>
     <div id="manipula">
         <!--a div é uma tag que serve como conteiner, para armazenar outras tags-->
-        <p>Com base nos argumentos apresentados na aula, é impossível entender que uma coisa é uma coisa, e outra coisa
-            é outra coisa. Admito que não concordo e nem discordo, muito pelo contrário.</p>
+        <p>Com base nos argumentos apresentados na aula, é impossível entender que uma coisa é uma coisa, e outra coisa é outra coisa. Admito que não concordo e nem discordo, muito pelo contrário.</p>
 
-        <p>É factível que a Terra é um dos planetas mais conhecidos do mundo, mesmo sabendo que a vida é uma sucessão de
-            sucessivos que sucedem sucessivamente sem cessar.
-            Agora, mais do que nunca, é hora, afinal, o importante é o que importa, pois onde você quer que esteja, você
-            sempre estará lá.</p>
+        <p class="paragrafo">É factível que a Terra é um dos planetas mais conhecidos do mundo, mesmo sabendo que a vida é uma sucessão de sucessivos que sucedem sucessivamente sem cessar. Agora, mais do que nunca, é hora, afinal, o importante é o que importa, pois onde você
+            quer que esteja, você sempre estará lá.</p>
     </div>
     <br>
     <hr>
 
-    <h2>Altere o texto acima clicando nos botões</h2>
+    <!--<h2 class="chamada">Altere o texto acima clicando nos botões</h2>-->
+
+    <h2 class="chamada">Primeiro H2</h2>
+    <h2 class="chamada">Segundo H2</h2>
+    <h2 class="chamada">Terceiro H2</h2>
+
+
+
     <div>
 
         <!-- Botão 01 - Atualizar a página para desfazer as mudanças da DOM-->
@@ -47,21 +51,41 @@
         <!--Botão 07 - Borda - Incluir borda na Div-->
         <input type="button" value="Borda" onclick="mudaBorda()">
 
+        <!--Botão 08 - Remover Borda - Remover a borda da Div-->
+        <input type="button" value="Remover Borda" onclick="removerBorda()">
 
-        <input type="button" value="Botão 08">
-        <input type="button" value="Botão 09">
-        <input type="button" value="Botão 10">
-        <input type="button" value="Botão 11">
-        <input type="button" value="Botão 12">
-        <input type="button" value="Botão 13">
-        <input type="button" value="Botão 14">
-        <input type="button" value="Botão 15">
-        <input type="button" value="Botão 16">
-        <input type="button" value="Botão 17">
-        <input type="button" value="Botão 18">
+        <!--Botão 09 - Remover Div - Remover a Div-->
+        <input type="button" value="Remover Div" onclick="removeDiv()">
+
+        <!--Botão 10 - Reaparecer Div - Incluir novamente a Div-->
+        <input type="button" value="Reaparecer Div" onclick="reaparecerDiv()">
+
+        <!--Botão 11 - Não - Altera o texto da tag H2 através de sua classe-->
+        <input type="button" value="Altera H2" onclick="alteraH2()">
+
+        <!--Botão 12 - Background Parágrafo - Criar Background para um paragrafo-->
+        <input type="button" value="Background paragrafo" onclick="backp()">
+
+        <!--Botão 13 - Cor do Botão - Muda a cor de apenas um botão pelo nome da tag input-->
+        <input type="button" name="teste" value="Cor do Botão" onclick="mudaCorB()">
+
+        <!--Botão 14 - Cor de todos Botões - Muda a cor de todos botões-->
+        <input type="button" value="Cor de todos Botões" onclick="mudaCorBotoes()">
+
+        <!--Botão 15 - Contar botões-->
+        <input type="button" value="Contar Botões" onclick="contarBotões()">
+
+        <!--Botão 16 - Censura - Substitui o segundo parágrafo por *** -->
+        <input type="button" value="Censura" onclick="censura()">
+
+        <!--Botão 17 - Trocar fundo da página com query selector-->
+        <input type="button" value="Background query selector" onclick="fundo()">
+
+        <!--Botão 18 - Se formar no Senai - É o que acontece formado.-->
+        <input type="button" value="Se formar no Senai" onclick="trocarFoto()">
     </div>
 
-    <img src="../aula_03_11_2021/imagens/xuxa.jpg" alt="Foto">
+    <img id="image" src="../aula_03_11_2021/imagens/xuxa.jpg" alt="Foto">
 
 
 </body>
