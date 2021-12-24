@@ -1,0 +1,37 @@
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /*quando esta em coluna o justify-content: alinha ele verticalmente */
+    background-color: #DDDDDD;
+
+}
+
+.container div{
+
+background-color: rgb(158, 3, 3);
+border-radius: 10px;
+margin: 10px;
+padding: 15px;
+font-size: 18px;
+color: whitesmoke;
+
+}
+
+.texto1, .texto2{
+justify-content: center;
+}
+
+.img1, .img2{
+
+align-self: center;
+
+
+}
+
+.espaco{
+
+height: 50px;} 
+
+

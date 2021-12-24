@@ -1,0 +1,24 @@
+.container{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  /*quando esta em coluna o justify-content: alinha ele verticalmente */
+    background-color: #DDDDDD;
+
+}
+
+.container div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(158, 3, 3);
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+/* quando:
+flex-direction: row;
+justify-content: center; 
+o justify vai alinhar no eixo horizontal, visto que o flex-direction estava com "row" (linha)
+caso esteja em column o alinhamento se dará na vertical, pois estavamos falando de itens em colunas */
